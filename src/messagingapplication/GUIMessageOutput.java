@@ -15,7 +15,7 @@ public class GUIMessageOutput implements MessageOutput{
 
     @Override
     public void produceMessageOutput(String message) {
-       JOptionPane.showMessageDialog(null,message);
+       JOptionPane.showMessageDialog(null,message,"Your Message",JOptionPane.PLAIN_MESSAGE);
     }
     
 }
