@@ -16,7 +16,7 @@ public class GUIMessageInput implements MessageInput {
     
     @Override
     public String getMessageInput() {
-        message = JOptionPane.showInputDialog(null, message);
+        message = JOptionPane.showInputDialog("Enter Your Message", message);
         return message;
     
 }

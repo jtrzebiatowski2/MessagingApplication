@@ -10,8 +10,9 @@ package messagingapplication;
  */
 public class MessageService {
     
-    private MessageOutput output;
     private MessageInput input;
+    private MessageOutput output;
+    
     
     public MessageService(MessageInput input, MessageOutput output){
         this.input = input;
