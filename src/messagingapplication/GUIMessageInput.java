@@ -4,15 +4,21 @@
  */
 package messagingapplication;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author J-Tron
  */
 public class GUIMessageInput implements MessageInput {
 
+    private String message;
+    
     @Override
     public String getMessageInput() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        message = JOptionPane.showInputDialog(null, message);
+        return message;
+    
+}
     
 }

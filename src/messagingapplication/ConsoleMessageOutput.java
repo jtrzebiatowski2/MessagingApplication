@@ -11,8 +11,8 @@ package messagingapplication;
 public class ConsoleMessageOutput implements MessageOutput{
 
     @Override
-    public void produceMessageOutput() {
-      System.out.println();
+    public void produceMessageOutput(String message) {
+      System.out.println(message);
       
     }
     

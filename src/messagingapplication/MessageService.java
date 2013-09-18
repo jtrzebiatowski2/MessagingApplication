@@ -13,6 +13,15 @@ public class MessageService {
     private MessageOutput output;
     private MessageInput input;
     
+    public MessageService(MessageInput input, MessageOutput output){
+        this.input = input;
+        this.output = output;
+    }
+    
+    public void constructMessage(){
+        String message = input.getMessageInput();
+        output.produceMessageOutput(message);
+    }
     
 }
 

@@ -9,5 +9,5 @@ package messagingapplication;
  * @author J-Tron
  */
 public interface MessageOutput {
-    public abstract void produceMessageOutput();
+    public abstract void produceMessageOutput(String message);
 }

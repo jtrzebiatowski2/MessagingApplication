@@ -14,6 +14,11 @@ public class MessagingApplication {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MessageInput testInput = new ConsoleMessageInput();
+        MessageOutput testOutput = new GUIMessageOutput();
+        
+        MessageService testMessageService = new MessageService(testInput, testOutput);
+        
+        testMessageService.constructMessage();
     }
 }
